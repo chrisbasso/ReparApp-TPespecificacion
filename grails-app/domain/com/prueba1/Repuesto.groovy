@@ -9,7 +9,10 @@ class Repuesto {
     double precio
     String descripcion
 
-    static belongsTo = [ categoria : Categoria ]
+    static belongsTo = [ categoria : SubCategoria, tipoArreglo: TipoArreglo ]
+
+
+    String toString() { return nombre }
 
     static constraints = {
         nombre nombre: true

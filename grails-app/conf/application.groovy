@@ -21,9 +21,11 @@ grails.plugin.springsecurity.interceptUrlMap = [
 	[pattern: '/dbconsole/**',   access: ['permitAll']],
 	[pattern: '/console/**',     access: ['permitAll']],
 	[pattern: '/',               access: ['ROLE_ADMIN']],
-	[pattern: '/repuesto/index.gsp',  access: ['ROLE_ADMIN']],
 	[pattern: '/repuesto/**',  access: ['ROLE_ADMIN']],
-	[pattern: '/categoria/**',  access: ['ROLE_ADMIN']]
+	[pattern: '/categoria/**',  access: ['ROLE_ADMIN']],
+    [pattern: '/tipoarreglo/**',  access: ['ROLE_ADMIN']],
+	[pattern: '/arreglo/**',  access: ['ROLE_ADMIN']],
+	[pattern: '/subcategoria/**',  access: ['ROLE_ADMIN']]
 
 
 ]
