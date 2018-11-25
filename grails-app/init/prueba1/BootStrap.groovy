@@ -9,7 +9,7 @@ class BootStrap {
     def init = { servletContext ->
         environments {
             development {
-                bootStrapEntities()
+//                bootStrapEntities()
             }
         }
     }
@@ -24,7 +24,7 @@ class BootStrap {
     }
 
     private static void createRoles() throws Exception {
-        createRol('ROLE_ADMIN')
+        createRol('ROLE_USER')
     }
 
     private static void createRol(String authority) {
@@ -33,7 +33,7 @@ class BootStrap {
     }
 
     private void createUsers() throws Exception {
-        createUser('admin', '123456', 'ROLE_ADMIN')
+        createUser('carlitos', 'carlitos', 'ROLE_USER')
     }
 
     private void createUser(String username, String password,String role)

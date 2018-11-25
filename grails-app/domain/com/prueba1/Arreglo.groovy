@@ -5,7 +5,7 @@ class Arreglo {
     static belongsTo = [ tipo : TipoArreglo ]
     static hasMany = [ repuestos : Repuesto, solicitudes: Solicitud ]
     String descripcion
-    double precio = calcularPrecio()
+    double precio
 
     String toString() { return descripcion }
 

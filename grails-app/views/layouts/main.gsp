@@ -24,13 +24,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/#">
+                <a class="navbar-brand" href="/">
 		    <asset:image src="LogoReparApp.png" alt="ReparApp Logo"/>
                 </a>
             </div>
             <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
                 <ul class="nav navbar-nav navbar-right">
-                    <g:pageProperty name="page.nav" />
+                    <li >
+                        <a href="/solicitud/create"  role="button" >Solicitar Arreglo</a>
+                    </li>
+                    <li >
+                        <a href="/repuesto/index"  role="button" >Repuestos</a>
+                    </li>
+                    <li >
+                        <a href="/categoria/index" role="button" >Categorias</a>
+                    </li>
+                    <li >
+                        <a href="/arreglo/index" role="button" >Arreglos</a>
+                    </li>
+                    <li >
+                        <a href="/tipoArreglo/index" role="button" >Tipo de Arreglos</a>
+                    </li>
+                    <li >
+                        <a href="/logout/index" role="button" >Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>

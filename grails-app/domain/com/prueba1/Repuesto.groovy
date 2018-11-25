@@ -8,9 +8,9 @@ class Repuesto {
     String anio
     double precio
     String descripcion
+    int cantidad
 
     static belongsTo = [ categoria : SubCategoria, arreglo: Arreglo ]
-
 
     String toString() { return nombre }
 
@@ -22,11 +22,8 @@ class Repuesto {
         precio precio:true
         descripcion descripcion:true
         categoria categoria:true
+        cantidad cantidad:true
 
-    }
-
-    double getPrecio() {
-        return precio
     }
 
 }
